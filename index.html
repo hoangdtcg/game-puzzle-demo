@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Xếp Hình</title>
+</head>
+<body>
+    <img id="img1" onclick="chuyenAnh(this.id)" src="images/anh1.jpeg" alt="1">
+    <img id="img2" onclick="chuyenAnh(this.id)" src="images/anh1.jpeg" alt="1">
+    <img id="img3" onclick="chuyenAnh(this.id)" src="images/anh1.jpeg" alt="1">
+    <img id="img4" onclick="chuyenAnh(this.id)" src="images/anh1.jpeg" alt="1">
+    <img id="img5" onclick="chuyenAnh(this.id)" src="images/anh1.jpeg" alt="1">
+    <script>
+        function chuyenAnh(id) {
+            let img = document.getElementById(id);
+
+            // this.id <=> document.getElementById("image1").id
+
+            // alert(img.src);
+            // if(img.src.includes("images/anh1.jpeg")){ //includes <=> match
+            //     img.src = "images/anh2.jpeg";
+            // }else if(img.src.match('images/anh2.jpeg')){
+            //     img.src = "images/anh3.jpeg";
+            // }else{
+            //     img.src = "images/anh1.jpeg";
+            // }
+            let num = parseInt(img.alt);
+            // if(num < 3)
+            //     num++;
+            // else
+            //     num = 1;
+            num < 3 ? num++ : num=1;
+            img.src = "images/anh"+num+".jpeg";
+            img.alt = num;
+            checkWin();
+        }
+
+        function checkWin() {
+            let img1 = document.getElementById("img1").alt;
+            let img2 = document.getElementById("img2").alt;
+            let img3 = document.getElementById("img3").alt;
+            let img4 = document.getElementById("img4").alt;
+            let img5 = document.getElementById("img5").alt;
+
+            if(img1 == img2 && img2 == img3 && img3 == img4 && img4 == img5){
+                alert("Game Win");
+            }
+        }
+    
+    </script>
+</body>
+</html>

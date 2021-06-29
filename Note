@@ -1,0 +1,23 @@
+Ứng dụng Switch - Case:
+Bài tập game xếp hình
+- Cho 5 hình ảnh, nếu 5 hình ảnh đấy giống nhau thì thông báo là Game Win
+B1: Chuẩn bị hình ảnh - done
+B2: Hiển thị ảnh lên màn hình - done
+B3: Click ảnh thì chuyển ảnh - done
+B4: Chuyển đến ảnh cuối thì về ảnh đầu
+B5: Nhân bản ra 5 ảnh
+B6: Check Win và hiển thị
+B7: CSS
+
+this - chính thẻ html đó
+Trình chrome:
+- HTML render: Hiển thị siêu văn bản
+- V8 Engine: Xử lý JavaScript
+- Chạy độc lập với nhau.
+
+Game lật hình:
+Lật 2 hình giống nhau thì được điểm và hình đó không bị úp nữa.
+Lật được hết các hình ngửa thì win.
+B1 - Lên ý tưởng
+B2 - Đưa ra được bước làm
+B3 - Code của từng bước
